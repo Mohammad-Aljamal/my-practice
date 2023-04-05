@@ -26,7 +26,7 @@ function oddeven (arr){
 
 let oddEvenArray = [9,0,1,2,3,5,7];
 
-//oddeven(oddEvenArray);
+oddeven(oddEvenArray);
 
 //************************************************************* */
 
@@ -52,7 +52,7 @@ let sumArray1 = [1 ,8 ,4 ,8];
 let sumArray2 = [1, 1, 1, 1];
 
 let sumArray = correspondindSum(sumArray1, sumArray2);
-//console.log(sumArray);
+console.log(sumArray);
 
 //************************************************************* */
 
