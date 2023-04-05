@@ -17,7 +17,6 @@ function oddeven (arr){
             odd += 1;
         }
     }
-    console.log(odd,even);
     arr1[0]="the even num =" + even;
     arr1[1]="the odd num =" + odd;
 
@@ -26,7 +25,9 @@ function oddeven (arr){
 
 let oddEvenArray = [9,0,1,2,3,5,7];
 
-oddeven(oddEvenArray);
+console.log(oddeven(oddEvenArray));
+
+
 
 //************************************************************* */
 
@@ -111,14 +112,17 @@ function removeDublicates (arr){
             }
         }
     }
-    console.log(arr);
     return arr;
 }
 
 let duplicatesArray = [1 ,1 ,1 ,2 ,3 ,2 ,4];
 
-removeDublicates(duplicatesArray);
+console.log(removeDublicates(duplicatesArray));
 
 
 
 
+
+// delete arr[i]; ===> how to make it deleted from array not to be empty?
+//second max if all the num are the same (line 22 ) what should be the initial value?
+//what if all number less than ZERO what should i make the initial value?
