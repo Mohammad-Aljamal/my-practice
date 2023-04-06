@@ -65,15 +65,27 @@ function secondLargest (arr){
 
     let arr1=arr;
     let index;
-    let max = 0;
-    let secondMax =0;
+    let max =arr[0];
+    let secondMax =0;     /// what the initial value
+    let flag = 0;
 
     for (let i=0; i<arr.length ; i++){
-        if (arr[i] > max){
+
+        if (arr[i] == max){
+            flag += 1;
+        }
+        else if (arr[i] > max){
             max = arr[i];
             index = i;
         }
     }
+
+
+    if (flag == arr.length){
+        return 'all the number are have the same value';
+    }
+
+    //delete arr[index];
 
      for (let j=0; j<arr.length; j++){
        if (arr[j]==max){
