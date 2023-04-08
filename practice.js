@@ -66,7 +66,7 @@ function secondLargest (arr){
     let arr1=arr;
     let index;
     let max =arr[0];
-    let secondMax =0;     /// what the initial value
+    let secondMax;    /// what the initial value
     let flag = 0;
 
     for (let i=0; i<arr.length ; i++){
@@ -80,12 +80,20 @@ function secondLargest (arr){
         }
     }
 
+    if (arr[0] == max){
+        index = 0;
+        secondMax = arr[1];
+    }
+    else {
+        secondMax = arr[0];
+    }
+
 
     if (flag == arr.length){
         return 'all the number are have the same value';
     }
 
-    //delete arr[index];
+    delete arr[index];
 
      for (let j=0; j<arr.length; j++){
        if (arr[j]==max){
